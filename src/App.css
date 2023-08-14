@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;1,200&family=Roboto:ital,wght@1,100&family=Rubik:wght@300&display=swap');
+*{margin: 0;
+padding: 0;
+box-sizing: border-box;}
+
+body{
+  color: white;
+  background-color: rgba(8, 8, 49, 0.963);
+font-family: 'Rubik', sans-serif;;
+}
+.header{
+  display: flex;
+background-image: url(https://i.blogs.es/669147/ram-s6-key--rt-1920x1080/840_560.jpeg);
+height: 300px;
+background-size: cover;
+background-size: 100% 100%;
+justify-content: center;
+}
+
+.container--rick{
+display: flex;
+flex-direction: column;
+gap: 1rem;
+background-color: rgb(6, 6, 26);
+justify-content: center;
+align-items: center;
+}
+
+/*container all input and button*/
+.container--input{
+  display: flex;
+  margin-top: 250px;
+  background-color: rgba(21, 33, 29, 0.622);
+  justify-content: center;
+  align-items: center;
+  height: auto;
+  width: 250px;
+  border-radius: 15px;
+}
+input{
+  width: 300px;
+  height: 30px;
+  border-radius: 8px;
+}
+
+.search{
+margin-left: 5px;
+width: 50px;
+height: 28px;
+border-radius: 5px;
+}
+
+.search:hover{
+cursor: pointer;
+background-color: rgba(6, 81, 6, 0.51);
+color: white;
+border-radius: 5px;
+border: none;
+}
+
+/*container-card*/
+
+.container-card{
+display: flex;
+justify-content: center;
+align-items: center;
+width:300px ;
+margin: 0 auto;
+margin-top: 1rem;
+box-shadow: 1px 1px 2px 2px gray;
+background-color: rgba(6, 6, 26, 0.645);
+border-radius: 7px;
+transition: all 0.2s ease-in;
+}
+
+.container-card:hover{
+transform: translateY(-0.3em);
+box-shadow: 2px 3px 2px 2px rgb(138, 156, 5);
+}
+
+.img--rick{
+  width:100%;
+border-radius: 10px;
+
+}
+
+
+
+li{list-style: none;}
+
+
+/*mediaquerys*/
+
+@media screen and (min-width:768px) {
+  
+.container--population{
+display: flex;
+flex-direction:  row;
+gap: 3rem;
+}
+
+.container--father-card{
+display: grid;
+grid-template-columns: 1fr 1fr;
+
+
+}
+
+
+}
+
+/*mediaquerys 981*/
+@media screen and (min-width:981px) {
+  .container-card{
+width: 500px;
+height: 250px;
+gap:1rem;
+overflow: hidden;
+  }
+ 
+  .img--rick{
+    width:210px;
+    height: 100%;
+  border-radius: 10px;
+  
+  }
+  
+.container--img-and-name{
+display: flex;
+flex-direction: row;
+gap: 1rem;
+width: 500px;
+height: 270px;
+
+
+}
+.and--name{
+margin-top: 80px;
+padding: 2rem;
+}
+  }
